@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
+    <title>Mensagens Codificadas</title>
+</head>
+<body class="divbody1">
+    <header>
+        <h1>Vamos testar estas Cifras?</h1>
+    </header>
+    <div>
+        <p><h2 class="fraseintro">Escolha qual a que você prefere testar, digite uma mensagem(e digite o passo, no caso da Cifra de César)<br> e veja o que acontece quando você codifica. Não esqueça que ela precisará ser decodificada!</h2></p>
+    </div>
+        <main>
+            <div class='campo'>          
+                <div class="divcampodigite">
+                    <div>
+                        <label> Digite Mensagem:</label>
+                    </div>
+                    <div>
+                        <textarea cols='60' rows='5' id='entra'></textarea>
+                    </div>
+                </div>
+                <div class="divcripg">
+                <label>Escolha a Criptografia:</label>
+                <select id='cxSelec'>
+                    <option  value='cifra-cesar'>cifra-de-cesar</option>
+                    <option  value='b64'>base64</option>
+                </select>
+                </div>
+                <div class="divchaves">
+                    <div>
+                        <input name='cod' class='opcao' type='radio' checked>
+                        <label  class='nm'>Codificar</label><br>
+    
+                        <input name='cod' class='opcao' type='radio'>
+                        <label class='nm'>Decodificar</label>
+                    </div>
+                </div>                
+                <div class="divdefina">
+                    <br><label id='passo'>Defina o Passo:</label>
+                    <input class='nmr' type='number'  id='desloc' min='0' max='25'>
+                </div>
+                <div>
+                    <div>
+                        <p class='legd'>Resultado:</p>                        
+                    </div>
+                    <div>
+                        <textarea cols='60' rows='5' id='sai'></textarea>
+                    </div>
+                </div>
+                <div>
+                    <button id='botaoEnvio'>Codificar/Decodificar</button>
+                </div>
+            </div>
+
+        </main>
+        <script src = './cifraebase.js'></script>    
+    </body>
+</html>
+<footer>
+    <br><h4>&copy; 2022 - Resilia Educação - Criado Por Edson Vieira</h4>
+</footer>

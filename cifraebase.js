@@ -1,6 +1,6 @@
 function paginaindex (){
     var paginaindex = '';
-    paginaindex = 'index.html';
+    paginaindex = 'index-pagina.html';
     window.location.href = paginaindex;
 }
 var entra = document.querySelector('#entra');

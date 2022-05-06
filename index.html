@@ -4,64 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagens codificadas</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Coda&display=swap" rel="stylesheet">
-    <title>Mensagens Codificadas</title>
 </head>
-<body class="divbody1">
+<body class="divbody0">
     <header>
-        <h1>Vamos testar estas Cifras?</h1>
+        <p><h1>Mensagens Codificadas: <em>Cifra de César e Base64</em></h1></p>
     </header>
-    <div>
-        <p><h2 class="fraseintro">Escolha qual a que você prefere testar, digite uma mensagem(e digite o passo, no caso da Cifra de César)<br> e veja o que acontece quando você codifica. Não esqueça que ela precisará ser decodificada!</h2></p>
+    <main>
+        <div class="divhistoria">
+            <p><h2>Cifra de César:</h2><br> A <b>cifra de César</b> foi nomeada em homenagem a Júlio César que, segundo Suetónio, a usava com uma troca de três posições para proteger mensagens de significado militar. Ainda que o uso deste esquema por César tenha sido o primeiro a ser registrado, é sabido que outras cifras de substituições foram utilizadas anteriormente.<br> É desconhecido o quão efetiva era a cifra de César nesta época, mas é provável que fosse razoavelmente segura, ainda mais porque a maioria dos inimigos de César eram analfabetos e outros presumiam que as mensagens estavam escritas em uma língua estrangeira desconhecida. Presumindo que um inimigo pudesse ler a mensagem, não existem registros daquela época de nenhuma técnica para a solução de cifras de substituição simples. Os registros sobreviventes mais recentes datam dos trabalhos de Alquindi no século IX, no mundo árabe, com a descoberta da análise de frequência.<br> Uma cifra de César com uma troca de uma posição é utilizada nas costas dos mezuzá para criptografar os nomes de Deus. Isto pode ser um legado de um tempo antigo quando não era permitido ao povo judeu ter mezuzás. As letras do criptograma formam um nome divino que mantém as forças do mal sob controle.<br><br>Em criptografia, a <b>Cifra de César</b>, também conhecida como cifra de troca, código de César ou troca de César, é uma das mais simples e conhecidas técnicas de criptografia. É um tipo de cifra de substituição na qual cada letra do texto é substituída por outra, que se apresenta no alfabeto abaixo dela um número fixo de vezes. Por exemplo, com uma troca de três posições, A seria substituído por D, B se tornaria E, e assim por diante. O nome do método é em homenagem a Júlio César, que o usou para se comunicar com os seus generais. O processo de criptografia de uma cifra de César é frequentemente incorporado como parte de esquemas mais complexos, como a cifra de Vigenère, e continua tendo aplicações modernas, como no sistema ROT13. Como todas as cifras de substituição monoalfabéticas, a cifra de César é facilmente decifrada e na prática não oferece essencialmente nenhuma segurança na comunicação.
+            </p>
+            <br><p><h2>Base64:</h2><br><br>Na programação de computadores , <b>Base64</b> é um grupo de esquemas de codificação binário-texto que representam dados binários (mais especificamente, uma sequência de bytes de 8 bits) em sequências de 24 bits que podem ser representadas por quatro dígitos Base64 de 6 bits.<br> Comum a todos os esquemas de codificação de binário para texto, o Base64 foi projetado para transportar dados armazenados em formatos binários em canais que suportam apenas conteúdo de texto de maneira confiável. Base64 é particularmente prevalente na World Wide Web onde um de seus usos é a capacidade de incorporar arquivos de imagem ou outros ativos binários dentro de ativos textuais, como arquivos HTML e CSS .<br> Base64 também é amplamente utilizado para enviar anexos de e-mail. Isso é necessário porque o SMTP — em sua forma original — foi projetado para transportar apenas caracteres ASCII de 7 bits. Essa codificação causa uma sobrecarga de 33 a 36% (33% pela própria codificação; até 3% a mais pelas quebras de linha inseridas).</p>
+        </div>
+        <div>
+            <h5><em>Fonte: Wikipédia</em></h5>
+        </div>
+    </main>    
+    <div class="divbtntestar">
+        <button class="btntestar" onclick="paginaindex()">Testar</button>
     </div>
-        <main>
-            <div class='campo'>          
-                <div class="divcampodigite">
-                    <div>
-                        <label> Digite Mensagem:</label>
-                    </div>
-                    <div>
-                        <textarea cols='60' rows='5' id='entra'></textarea>
-                    </div>
-                </div>
-                <div class="divcripg">
-                <label>Escolha a Criptografia:</label>
-                <select id='cxSelec'>
-                    <option  value='cifra-cesar'>cifra-de-cesar</option>
-                    <option  value='b64'>base64</option>
-                </select>
-                </div>
-                <div class="divchaves">
-                    <div>
-                        <input name='cod' class='opcao' type='radio' checked>
-                        <label  class='nm'>Codificar</label><br>
-    
-                        <input name='cod' class='opcao' type='radio'>
-                        <label class='nm'>Decodificar</label>
-                    </div>
-                </div>                
-                <div class="divdefina">
-                    <br><label id='passo'>Defina o Passo:</label>
-                    <input class='nmr' type='number'  id='desloc' min='0' max='25'>
-                </div>
-                <div>
-                    <div>
-                        <p class='legd'>Resultado:</p>                        
-                    </div>
-                    <div>
-                        <textarea cols='60' rows='5' id='sai'></textarea>
-                    </div>
-                </div>
-                <div>
-                    <button id='botaoEnvio'>Codificar/Decodificar</button>
-                </div>
-            </div>
-
-        </main>
-        <script src = './cifraebase.js'></script>    
-    </body>
+    <script src="./cifraebase.js"></script>
+</body>
 </html>
 <footer>
-    <br><h4>&copy; 2022 - Resilia Educação - Criado Por Edson Vieira</h4>
+    <br><h4>&copy;Todos os Direitos reservados - (Imagens obtidas da Internet para fins meramente didáticos) 2022 - Resilia Educação</h4>
 </footer>
